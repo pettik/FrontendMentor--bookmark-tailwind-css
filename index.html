@@ -11,12 +11,9 @@
       href="./images/favicon-32x32.png"
     />
     <!--=============== Google fonts ===============-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="css/style.css" />
@@ -26,8 +23,23 @@
     <!--=============== TITLE ===============-->
     <title>Frontend Mentor | Bookmarks</title>
   </head>
-  <body>
-    <h1 class="text-4xl mb-4">Welcome</h1>
-    <p>Start building your Tailwind project</p>
+  <body class="overflow-x-hidden">
+    <nav class="container relative mx-auto p-6">
+      <!-- Flex Container For Nav Items -->
+      <div class="flex items-center justify-between space-x-20 my-6">
+        <!-- Logo -->
+        <div class="z-30">
+          <img src="./images/logo-bookmark.svg" alt="Logo" id="logo">
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
+          <a href="#features" class="tracking-widest hover:text-softRed">Features</a>
+          <a href="#download" class="tracking-widest hover:text-softRed">Download</a>
+          <a href="#faq" class="tracking-widest hover:text-softRed">FAQ</a>
+
+          <a href="" class="px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-white">Login</a>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
