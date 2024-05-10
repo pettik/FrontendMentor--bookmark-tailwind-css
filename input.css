@@ -13,7 +13,7 @@
   .bg-tabs {
     width: 2000px;
     height: 300px;
-    left: 60%;
+    right: 60%;
     @apply absolute rounded-r-full top-60 bg-softBlue;
   }
 }
