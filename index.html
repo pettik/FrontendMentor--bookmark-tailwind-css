@@ -30,8 +30,9 @@
       <div class="flex items-center justify-between space-x-20 my-6">
         <!-- Logo -->
         <div class="z-30">
-          <img src="./images/logo-bookmark.svg" alt="Logo" id="logo" />
+          <img src="images/logo-bookmark.svg" alt="" id="logo" />
         </div>
+
         <!-- Menu Items -->
         <div
           class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex"
@@ -43,23 +44,55 @@
             >Download</a
           >
           <a href="#faq" class="tracking-widest hover:text-softRed">FAQ</a>
+
           <a
-            href=""
+            href="#"
             class="px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-white"
             >Login</a
           >
         </div>
+        <!-- Hamburger Button -->
+
+        <button
+          id="menu-btn"
+          class="z-30 block md:hidden focus:outline-none hamburger"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue"
+      >
+        <div class="w-full py-3 text-center">
+          <a href="#features" class="block hover:text-softRed">Features</a>
+        </div>
+        <div class="w-full py-3 text-center">
+          <a href="#download" class="block hover:text-softRed">Download</a>
+        </div>
+        <div class="w-full py-3 text-center">
+          <a href="#faq" class="block hover:text-softRed">FAQ</a>
+        </div>
+        <div class="w-full py-3 text-center">
+          <a href="#" class="block hover:text-softRed">Login</a>
+        </div>
       </div>
     </nav>
+
     <!-- Hero Section -->
     <section id="hero">
       <!-- Container For Image & Content -->
       <div
-        class="container flex flex-col-reverse p-6 mx-auto lg:flex-row lg:mb-0"
+        class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0"
       >
-        <!-- Content  -->
+        <!-- Content -->
         <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
-          <h1 class="text-3xl font-semibold text-center lg:text-6xl lg:left">
+          <h1
+            class="text-3xl font-semibold text-center lg:text-6xl lg:text-left"
+          >
             A Simple Bookmark Manager
           </h1>
           <p
@@ -69,27 +102,29 @@
             Open a new browser tab and see your sites load instantly. Try it for
             free.
           </p>
+
           <!-- Buttons Container -->
           <div
             class="flex items-center justify-center w-full space-x-4 lg:justify-start"
           >
             <a
               href="#"
-              class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-md border-softBlue border-2 md:text-base hover:bg-white hover:text-softBlue"
+              class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-md border-2 border-softBlue md:text-base hover:bg-white hover:text-softBlue"
               >Get It On Chrome</a
             >
             <a
               href="#"
-              class="p-4 text-sm font-semibold text-black bg-gray-300 rounded shadow-md border-gray-300 border-2 md:text-base hover:bg-white hover:text-gray-600"
-              >Get It On Chrome</a
+              class="p-4 text-sm font-semibold text-black bg-gray-300 rounded shadow-md border-2 border-gray-300 md:text-base hover:bg-white hover:text-gray-600"
+              >Get It On Firefox</a
             >
           </div>
         </div>
-        <!-- Image  -->
+
+        <!-- Image -->
         <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
           <div class="bg-hero"></div>
           <img
-            src="./images/illustration-hero.svg"
+            src="images/illustration-hero.svg"
             alt=""
             class="relative z-10 lg:top-24 xl:top-0 overflow-x-visible"
           />
@@ -253,12 +288,12 @@
     <!-- Download Heading -->
     <section id="download">
       <div class="container mx-auto px-6">
-        <h2 class="mb-6 text-3xl font-semobild text-center md:text-4xl">
+        <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
           Download the extension
         </h2>
-        <p class="max-w-lg mx-auto text-cetner text-grayishBlue">
+        <p class="max-w-lg mx-auto text-center text-grayishBlue">
           We've got more browsers in the pipeline. Please do let us know if
-          you've got a favourite yo'd like us to prioritize.
+          you've got a favourite you'd like us to prioritize.
         </p>
       </div>
     </section>
@@ -561,7 +596,8 @@
         </form>
       </div>
     </section>
-       <!-- Footer -->
+
+    <!-- Footer -->
     <footer class="py-16 bg-veryDarkBlue">
       <!-- Footer Flex Container -->
       <div
