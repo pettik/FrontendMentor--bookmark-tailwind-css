@@ -1,4 +1,4 @@
-# FrontendMentor--loopstudios-landing-page-tailwind-css
+# FrontendMentor--bookmark-tailwind-css
 
 <b>Bookmark landing page</b> challenge using CSS framework - Tailwind CSS
 
